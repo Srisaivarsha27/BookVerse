@@ -1,0 +1,83 @@
+/* Floating navbar */
+.navbar {
+  position: fixed; /* Stays at the top */
+  top: 20px; /* Adds some gap from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the navbar */
+  width: 90%; /* Adjust width */
+  max-width: 1100px; /* Prevents it from getting too big */
+  background: rgba(0, 0, 0, 0.85); /* Darker transparent background */
+  padding: 15px 50px;
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000; /* Stays above everything */
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Section */
+.navbar .logo {
+  font-family: "Garamond", serif;
+  font-size: 2rem; /* Bigger font */
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo span {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+/* Navbar links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Garamond", serif;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #6EC5FF; /* Light blue hover */
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 95%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+pip-wheel-metadata/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs and cache
+*.log
+*.sqlite3
+.cache/
+.mypy_cache/
+pytest_cache/
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# Uvicorn reload
+*.pid

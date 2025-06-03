@@ -1,0 +1,161 @@
+/* General Styling */
+body{
+  background-color: #fff;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, rgb(182, 199, 227), #f5f7fa, rgb(182, 199, 227));
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Info Section */
+.book-info {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+  width: 260px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 5px solid rgb(131, 182, 236);
+  margin-right: 20px;
+}
+
+.book-details-text {
+  flex: 1;
+  color: #333;
+}
+
+.book-details-text h2 {
+  font-size: 35px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.book-details-text p {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.book-details-text strong {
+  color: rgb(7, 93, 184);
+}
+
+/* Summary & Reviews Section */
+.summary-review {
+  margin-top: 30px;
+}
+
+.summary-review h3 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Summary Styling */
+.summary-review p:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: rgb(211, 230, 249);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Reviews */
+.reviews {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.review {
+  font-size: 14px;
+  color: #555;
+  background: #ecf0f1;
+  padding: 15px;
+  border-left: 4px solid rgb(77, 149, 225);
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.reviews h4 {
+  font-size: 22px;
+  color: rgb(7, 93, 184);
+}
+
+/* Related Books Section */
+.related-books {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-books h3 {
+  font-size: 28px;
+  color: rgb(7, 93, 184);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Related Books Grid */
+.related-books-sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related-books-sections div {
+  flex: 1;
+  margin: 5px;
+  padding: 10px; 
+  background: rgb(211, 230, 249);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.related-books-sections div h4 {
+  font-size: 25px;
+  color:rgb(34, 36, 38);
+  margin-bottom: 10px;
+}
+
+.related-books-sections ul {
+  list-style: none;
+  font-size: 25px;
+  padding: 0;
+}
+
+.related-books-sections li {
+  font-size: 22px;
+  margin: 5px 0;
+  color:rgb(49, 82, 155);
+}
+
+/* Hover Effects */
+.book-cover:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.related-books-sections div:hover {
+  background:rgb(135, 210, 242);
+  transition: 0.3s;
+  transform: scale(1.03);
+}

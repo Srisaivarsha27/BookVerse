@@ -1,0 +1,12 @@
+.page-container {
+    padding: 20px;
+    margin-top: 0; /* Remove extra spacing */
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-top: 10px; /* Adjust as needed */
+    text-align: center;
+    color: #1e1e2f;
+  }
+  

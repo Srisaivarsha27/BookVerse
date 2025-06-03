@@ -1,0 +1,176 @@
+/* 🌈 Background */
+.books-container {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+/* 📚 Title */
+.heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+/* 🔍 Search Box */
+.search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* 📖 Book Grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts the grid items */
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+/* 📕 Book Cards */
+.book-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 20px; /* Add spacing at the bottom */
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease-in-out;
+
+}
+
+/* 🖼️ Book Images */
+.book-image {
+  max-width: 120px;
+  max-height: 170px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 📗 Book Info */
+.book-title {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ✅ Dynamic Font Size for Multiple Authors */
+.book-author span {
+  display: inline-block;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-author span[data-long="true"] {
+  font-size: 0.75rem;
+}
+
+/* ⭐ Rating */
+.book-rating {
+  font-size: 1rem;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* ❌ No Results */
+.no-results {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* 🌟 Responsive Design */
+
+/* For small devices like mobile phones */
+@media (max-width: 600px) {
+  .search-bar {
+    width: 90%;
+  }
+
+  .book-grid {
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+
+  .book-card {
+    width: 150px; /* Reduce width of book cards */
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* For tablets and smaller laptops */
+@media (max-width: 900px) {
+  .search-bar {
+    width: 70%;
+  }
+
+  .book-card {
+    width: 180px; /* Adjust width for medium devices */
+  }
+
+  .book-grid {
+    gap: 15px;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+
+/* For larger laptops or desktops */
+@media (min-width: 900px) {
+  .book-grid {
+    gap: 20px; /* Regular gap for larger screens */
+  }
+
+  .book-card {
+    width: 200px; /* Regular book card size */
+  }
+
+  .search-bar {
+    width: 60%;
+  }
+}
