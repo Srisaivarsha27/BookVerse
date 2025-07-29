@@ -152,4 +152,3 @@ bookverse/
 
 💡 Designed with ❤️ for book lovers who want both metadata and meaningful relationships.
 
-```
